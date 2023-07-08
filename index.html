@@ -20,6 +20,7 @@
         <style id="scrollObserveCSS"> [data-effect] { opacity: 0 } </style>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
+
     <body background="./kiyo/img/kiyo-bg.png">
             
         <script>
@@ -40,191 +41,203 @@
             </div>
         </div>
 
-        <header class="w-100 py-3 top-0 bg-white shadow position-fixed" style="z-index: 100;">
+        <header class="w-100 py-3 top-0 shadow-lg position-fixed" style="z-index: 100; background: white;">
             <div class="d-flex flex-row justify-content-center">
-                <h1>
+                <div style="max-width: 70px;">
                     <a href="#">
-                        <img src="./kiyo/img/kiyo-icon-bg-removed.png">
+                        <img src="./kiyo/img/kiyo-icon-bg-removed.png" class="img-fluid">
                     </a>
-                </h1>
-                <h1>キヨの非公式サイト</h1>
+                </div>
+                <div class="fs-3">キヨの非公式サイト</div>
+                <div style="max-width: 70px;">
+                    <a href="#">
+                        <img src="./kiyo/img/kiyo-icon-bg-removed.png" class="img-fluid">
+                    </a>
+                </div>
             </div>
         </header>
 
-        <main role="main" class="main">
-        <section class="hero">
-            <div class="hero-inr">
-                <ul class="hero-list">
-                <li><video src="./2022/movie/movie.mp4" muted="muted" playsinline=""></video></li>
-                <li style="background: url(/html/kiyo/img/kiyo-top-img.jpeg) no-repeat center 0;background-size: cover; display: none;"></li>
-                </ul>
-                <div class="hero-scroll">
-                <p class="hero-scroll-text"><img src="./2022/top/img/scroll.png" alt=""></p>
-                <div class="hero-scroll-line"><div class="hero-scroll-line2"></div></div>
+        <main class="">
+            <section class="w-100">
+                <div class="hero-inr">
+                    <ul class="hero-list">
+                        <li><video src="./2022/movie/movie.mp4" muted="muted" playsinline=""></video></li>
+                        <li><img src="./kiyo/img/kiyo-top-img.jpeg" class="img-fluid"></li>
+                    </ul>
+                    <div class="hero-scroll">
+                        <p class="hero-scroll-text"><img src="./kiyo/img/scroll.png" class="img-fluid"></p>
+                        <div class="hero-scroll-line"><div class="hero-scroll-line2"></div></div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="info">
-            <div class="info-inr">
-                <h2 class="info-heading">
-                    <img src="./2022/top/img/info_heading.png" alt="お知らせ">
-                </h2>
-                <div class="info-box swiper">
-                    <ul class="info-list swiper-wrapper">
-                        <li class="swiper-slide"><a href="https://shop.official-store.jp/top4/" target="_blank" rel="noopener" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_hitoiki2023'});"><img src="./kiyo/img/top4-tokyo-dome-goods.png" alt="対象の綾鷹製品購入でほっとひと息にぴったりの一品その場で当たる！"></a></li>
-                        <li class="swiper-slide"><a href="https://www.youtube.com/watch?v=HHjQe9DYwN0" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_kimetsu'});"><img src="./kiyo/img/uchotenneko-img.jpeg" alt="綾鷹を飲んで鬼滅の刃を楽しもう！"></a></li>
-                        <li class="swiper-slide"><a href="https://ch.nicovideo.jp/kiyo-saiore" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_okome'});"><img src="./kiyo/img/kiyo-niconico-img.png" alt="綾鷹 日本のお米応援プロジェクト"></a></li>
+            </section>
+            
+            <section class="info">
+                <div class="info-inr">
+                    <h2 class="info-heading">
+                        <img src="./2022/top/img/info_heading.png" class="img-fluid">
+                    </h2>
+                    <div class="info-box swiper">
+                        <ul class="info-list swiper-wrapper">
+                            <li class="swiper-slide"><a href="https://shop.official-store.jp/top4/" target="_blank" rel="noopener" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_hitoiki2023'});"><img src="./kiyo/img/top4-tokyo-dome-goods.png" class="img-fluid"></a></li>
+                            <li class="swiper-slide"><a href="https://www.youtube.com/watch?v=HHjQe9DYwN0" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_kimetsu'});"><img src="./kiyo/img/uchotenneko-img.jpeg" class="img-fluid"></a></li>
+                            <li class="swiper-slide"><a href="https://ch.nicovideo.jp/kiyo-saiore" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_okome'});"><img src="./kiyo/img/kiyo-niconico-img.png" class="img-fluid"></a></li>
+                            <li class="swiper-slide"><a href="https://www.youtube.com/watch?v=zhRJirH9wrc&list=PLPUGXakMkjREXbEhnVb9akrc_MImutw7q" onclick="dataLayer.push({'event':'gaTrackEvent', 'gaCategory': 'AY_TM', 'gaAction': 'click', 'gaLabel' : labelDevice+'_TOP_okome'});"><img src="./kiyo/img/anime-kiyo-neko.jpg" class="img-fluid"></a></li>
+                        </ul>
+                    </div>
+                    <ul class="info-nav-list swiper-pagination">
+                        <li class="is-active"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
-                <ul class="info-nav-list swiper-pagination">
-                    <li class="is-active"><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="intro">
-            <div class="intro-bg1 is-fixed"></div>
-            <div class="intro-bg2 is-fixed"></div>
-            <div class="intro-inr">
-                <h3 class="intro-heading scrollObserve"
-                    data-effect='{"opacity":[1, 0], "scale": [1, 1.05]}'>
-                    <img src="./2022/top/img/intro_heading.png" alt="茶葉がひらくと、緑茶はおいしくなる。">
-                </h3>
-                <div class="intro-wrap">
-                    <div class="intro-box scrollObserve"
-                        data-effect='{"opacity":[1, 0], "blur": [0, 3]}' data-delay="500">
-                    <p class="intro-text">京都宇治の老舗茶舗『上林春松本店』厳選の<br>「朝摘み茶葉<sup>*</sup>」を使用し、急須でいれるように、<br>茶葉を蒸らしながらゆっくりとひらかせることで、<br>緑茶本来の香り立つ旨みを引き出しました。<br>あらゆるシーンに、ほっと寄り添うおいしさです。</p>
-                    <p class="intro-notes"><sup>*</sup>午前中に摘採し、基本的に昼の12:00までに<br>工場に持ち込まれた茶葉</p>
-                    </div>
-                    <div class="intro-box2 scrollObserve"
-                        data-effect='{"opacity":[1, 0], "blur": [0, 3]}' data-delay="500">
-                    <p class="intro-text">パッケージデザインは、「茶葉をゆっくりとひらき、<br>緑茶本来の香りと旨みを引き出す」という綾鷹の価値<br>を体現。ひらいた茶葉から、<br>「香り」「旨み」「甘み」「渋み」がバランスよく<br>引き出される様子を表しています。</p>
+            </section>
+            <section class="intro">
+                <div class="intro-bg1 is-fixed"></div>
+                <div class="intro-bg2 is-fixed"></div>
+                <div class="intro-inr">
+                    <h3 class="intro-heading scrollObserve"
+                        data-effect='{"opacity":[1, 0], "scale": [1, 1.05]}'>
+                        <img src="./2022/top/img/intro_heading.png" class="img-fluid">
+                    </h3>
+                    <div class="intro-wrap">
+                        <div class="intro-box scrollObserve"
+                            data-effect='{"opacity":[1, 0], "blur": [0, 3]}' data-delay="500">
+                        <p class="intro-text">京都宇治の老舗茶舗『上林春松本店』厳選の<br>「朝摘み茶葉<sup>*</sup>」を使用し、急須でいれるように、<br>茶葉を蒸らしながらゆっくりとひらかせることで、<br>緑茶本来の香り立つ旨みを引き出しました。<br>あらゆるシーンに、ほっと寄り添うおいしさです。</p>
+                        <p class="intro-notes"><sup>*</sup>午前中に摘採し、基本的に昼の12:00までに<br>工場に持ち込まれた茶葉</p>
+                        </div>
+                        <div class="intro-box2 scrollObserve"
+                            data-effect='{"opacity":[1, 0], "blur": [0, 3]}' data-delay="500">
+                        <p class="intro-text">パッケージデザインは、「茶葉をゆっくりとひらき、<br>緑茶本来の香りと旨みを引き出す」という綾鷹の価値<br>を体現。ひらいた茶葉から、<br>「香り」「旨み」「甘み」「渋み」がバランスよく<br>引き出される様子を表しています。</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <section class="products">
+                <div class="products-inr">
+                <div class="icon-kyusu scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}'>
+                    <img src="./2022/common/img/icon_kyusu.png" class="img-fluid">
+                </div>
+                <h2 class="products-heading"><img src="./2022/top/img/products_heading.png" class="img-fluid"></h2>
+                <p class="products-heading-sub">綾鷹の各製品ページをご覧いただけます。</p>
+                <div class="btn-products-list"><a href="/about/">製品一覧</a></div>
+                    <ul class="products-list">
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <a href="/about/product/ayataka.html">
+                                <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="0">
+                                    <img src="./2022/top/img/products_ayataka.png" class="img-fluid"></div>
+                                <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="500">
+                                    <img src="./2022/top/img/products_ayataka_text.png" alt="急須でいれたような香りと旨み"></p>
+                                <div class="products-link ayataka" data-effect='{"opacity":[1, 0]}' data-delay="0">
+                                    <p class="products-text2"><img src="./2022/top/img/products_ayataka_text2.png" class="img-fluid"></p>
+                                    <div class="btn-products"><span><img src="./2022/top/img/products_ayataka_btn.png" class="img-fluid"></span></div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <a href="/about/product/amami.html">
+                                <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="100">
+                                    <img src="./2022/top/img/products_amami.png" alt="綾鷹 茶葉のあまみ"></div>
+                                <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="600">
+                                    <img src="./2022/top/img/products_amami_text.png" alt="急須でいれたようなさわやかなあまみ"></p>
+                                <div class="products-link amami" data-effect='{"opacity":[1, 0]}' data-delay="100">
+                                    <p class="products-text2"><img src="./2022/top/img/products_amami_text2.png" alt="すっきりとした気分転換に"></p>
+                                    <div class="btn-products"><span><img src="./2022/top/img/products_amami_btn.png" alt="綾鷹 茶葉のあまみ"></span></div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <a href="/about/product/houji.html">
+                                <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="200">
+                                    <img src="./2022/top/img/products_houji.png" alt="綾鷹 ほうじ茶"></div>
+                                <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="700">
+                                    <img src="./2022/top/img/products_houji_text.png" alt="急須でいれたような香ばしい旨み"></p>
+                                <div class="products-link houji" data-effect='{"opacity":[1, 0]}' data-delay="200">
+                                    <p class="products-text2"><img src="./2022/top/img/products_houji_text2.png" alt="心やすらぐひと休みに"></p>
+                                    <div class="btn-products"><span><img src="./2022/top/img/products_houji_btn.png" alt="綾鷹 ほうじ茶"></span></div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <a href="/about/product/koi.html">
+                                <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="300">
+                                    <img src="./2022/top/img/products_koi.png" alt="綾鷹 濃い緑茶"></div>
+                                <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="800">
+                                    <img src="./2022/top/img/products_koi_text.png" alt="急須でいれたような濃い旨み"></p>
+                                <div class="products-link koi" data-effect='{"opacity":[1, 0]}' data-delay="300">
+                                    <p class="products-text2 is-products-text-koi"><img src="./2022/top/img/products_koi_text2.png" alt="内臓脂肪と皮下脂肪をWで減らす&reg; ※茶カテキンの働き"></p>
+                                    <div class="btn-products"><span><img src="./2022/top/img/products_koi_btn.png" alt="綾鷹 濃い緑茶"></span></div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <a href="/about/product/tokusen.html">
+                                <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}'>
+                                    <img src="./2022/top/img/products_tokusen.png" alt="綾鷹 特選茶"></div>
+                                <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="500">
+                                    <img src="./2022/top/img/products_tokusen_text.png" alt="食事の脂肪と糖にはたらく"></p>
+                                <div class="products-link tokusen">
+                                    <p class="products-text2" data-effect='{"opacity":[1, 0]}'>
+                                    <img src="./2022/top/img/products_tokusen_text2.png" alt="毎日のお食事と一緒に"></p>
+                                    <div class="btn-products"><span><img src="./2022/top/img/products_tokusen_btn.png" alt="綾鷹 特選茶"></span></div>
+                                    <div class="products-logo--tokusen"><img src="./2022/top/img/products_logo_tokusen.png" alt="消費者庁許可 特定保健用食品"></div>
+                                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <img src="./kiyo/img/top4-goods-1.png" class="img-fluid">
+                            </div>
+                        </li>
+                        <li class="scrollObserve">
+                            <div class="products-box">
+                                <img src="./kiyo/img/top4-goods-2.png" class="img-fluid">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="movie">
+                <div class="movie-inr">
+                <div class="icon-kyusu scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}'><img src="./2022/common/img/icon_kyusu.png" class="img-fluid"></div>
+                <h2 class="movie-heading"><img src="./2022/top/img/movie_heading.png" class="img-fluid"></h2>
+                <p class="movie-heading-sub">放映中のCMなどがご覧いただけます。</p>
+                <div class="btn-movie-list"><a href="/cm/">動画一覧 </a></div>
+                    <ul class="movie-list">
+                        <li class="scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.03]}'>
+                        <dl class="movie-dl">
+                            <dt>
+                            <div class="movie-cover"><img src="./kiyo/img/kiyo-brake.png" class="img-fluid"></div>
+                            <div class="movie-frame" data-youtube="tEZ5dCZH_X8"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=HmBwomWpu_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </dt>
+                            <dd>
+                            <p class="movie-text">吉岡里帆 TVCM<br>「実はそれ、綾鷹でした。庭師」篇　濃い緑茶2000万本突破！</p>
+                            </dd>
+                        </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="d-flex flex-row justify-content-center">
+                <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">有頂天猫、配信開始しました。全ての配信サイトで聴いてください。<a href="https://t.co/XOM0tMvJjX">https://t.co/XOM0tMvJjX</a><br><br>あとみんな思ってること言いますね。<br>「何このジャケ写」 <a href="https://t.co/VoyZkngR6X">pic.twitter.com/VoyZkngR6X</a></p>&mdash; キヨ (@kiyo_saiore) <a href="https://twitter.com/kiyo_saiore/status/1650104886774882305?ref_src=twsrc%5Etfw">April 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CtB2-JiB-jV/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CtB2-JiB-jV/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CtB2-JiB-jV/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">キヨ(@kiyo_yuusya)がシェアした投稿</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
             </div>
-        </section>
-        <section class="products">
-            <div class="products-inr">
-            <div class="icon-kyusu scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}'>
-                <img src="./2022/common/img/icon_kyusu.png" alt="">
-            </div>
-            <h2 class="products-heading"><img src="./2022/top/img/products_heading.png" alt="製品紹介"></h2>
-            <p class="products-heading-sub">綾鷹の各製品ページをご覧いただけます。</p>
-            <div class="btn-products-list"><a href="/about/">製品一覧</a></div>
-                <ul class="products-list">
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <a href="/about/product/ayataka.html">
-                            <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="0">
-                                <img src="./2022/top/img/products_ayataka.png" alt="綾鷹"></div>
-                            <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="500">
-                                <img src="./2022/top/img/products_ayataka_text.png" alt="急須でいれたような香りと旨み"></p>
-                            <div class="products-link ayataka" data-effect='{"opacity":[1, 0]}' data-delay="0">
-                                <p class="products-text2"><img src="./2022/top/img/products_ayataka_text2.png" alt="毎日の定番、綾鷹の自信作"></p>
-                                <div class="btn-products"><span><img src="./2022/top/img/products_ayataka_btn.png" alt="綾鷹"></span></div>
-                            </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <a href="/about/product/amami.html">
-                            <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="100">
-                                <img src="./2022/top/img/products_amami.png" alt="綾鷹 茶葉のあまみ"></div>
-                            <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="600">
-                                <img src="./2022/top/img/products_amami_text.png" alt="急須でいれたようなさわやかなあまみ"></p>
-                            <div class="products-link amami" data-effect='{"opacity":[1, 0]}' data-delay="100">
-                                <p class="products-text2"><img src="./2022/top/img/products_amami_text2.png" alt="すっきりとした気分転換に"></p>
-                                <div class="btn-products"><span><img src="./2022/top/img/products_amami_btn.png" alt="綾鷹 茶葉のあまみ"></span></div>
-                            </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <a href="/about/product/houji.html">
-                            <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="200">
-                                <img src="./2022/top/img/products_houji.png" alt="綾鷹 ほうじ茶"></div>
-                            <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="700">
-                                <img src="./2022/top/img/products_houji_text.png" alt="急須でいれたような香ばしい旨み"></p>
-                            <div class="products-link houji" data-effect='{"opacity":[1, 0]}' data-delay="200">
-                                <p class="products-text2"><img src="./2022/top/img/products_houji_text2.png" alt="心やすらぐひと休みに"></p>
-                                <div class="btn-products"><span><img src="./2022/top/img/products_houji_btn.png" alt="綾鷹 ほうじ茶"></span></div>
-                            </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <a href="/about/product/koi.html">
-                            <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}' data-delay="300">
-                                <img src="./2022/top/img/products_koi.png" alt="綾鷹 濃い緑茶"></div>
-                            <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="800">
-                                <img src="./2022/top/img/products_koi_text.png" alt="急須でいれたような濃い旨み"></p>
-                            <div class="products-link koi" data-effect='{"opacity":[1, 0]}' data-delay="300">
-                                <p class="products-text2 is-products-text-koi"><img src="./2022/top/img/products_koi_text2.png" alt="内臓脂肪と皮下脂肪をWで減らす&reg; ※茶カテキンの働き"></p>
-                                <div class="btn-products"><span><img src="./2022/top/img/products_koi_btn.png" alt="綾鷹 濃い緑茶"></span></div>
-                            </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <a href="/about/product/tokusen.html">
-                            <div class="products-img" data-effect='{"opacity":[1, 0], "translateY": [0, -20]}'>
-                                <img src="./2022/top/img/products_tokusen.png" alt="綾鷹 特選茶"></div>
-                            <p class="products-text" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}' data-delay="500">
-                                <img src="./2022/top/img/products_tokusen_text.png" alt="食事の脂肪と糖にはたらく"></p>
-                            <div class="products-link tokusen">
-                                <p class="products-text2" data-effect='{"opacity":[1, 0]}'>
-                                <img src="./2022/top/img/products_tokusen_text2.png" alt="毎日のお食事と一緒に"></p>
-                                <div class="btn-products"><span><img src="./2022/top/img/products_tokusen_btn.png" alt="綾鷹 特選茶"></span></div>
-                                <div class="products-logo--tokusen"><img src="./2022/top/img/products_logo_tokusen.png" alt="消費者庁許可 特定保健用食品"></div>
-                            </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <img src="./kiyo/img/top4-goods-1.png" alt="毎日のお食事と一緒に">
-                        </div>
-                    </li>
-                    <li class="scrollObserve">
-                        <div class="products-box">
-                            <img src="./kiyo/img/top4-goods-2.png" alt="毎日のお食事と一緒に">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="movie">
-            <div class="movie-inr">
-            <div class="icon-kyusu scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.2]}'><img src="./2022/common/img/icon_kyusu.png" alt=""></div>
-            <h2 class="movie-heading"><img src="./2022/top/img/movie_heading.png" alt="動画"></h2>
-            <p class="movie-heading-sub">放映中のCMなどがご覧いただけます。</p>
-            <div class="btn-movie-list"><a href="/cm/">動画一覧 </a></div>
-                <ul class="movie-list">
-                    <li class="scrollObserve" data-effect='{"opacity":[1, 0], "scale": [1, 1.03]}'>
-                    <dl class="movie-dl">
-                        <dt>
-                        <div class="movie-cover"><img src="./kiyo/img/kiyo-brake.png" alt=""></div>
-                        <div class="movie-frame" data-youtube="tEZ5dCZH_X8"><iframe width="560" height="315" src="https://www.youtube.com/watch?v=HmBwomWpu_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        </dt>
-                        <dd>
-                        <p class="movie-text">吉岡里帆 TVCM<br>「実はそれ、綾鷹でした。庭師」篇　濃い緑茶2000万本突破！</p>
-                        </dd>
-                    </dl>
-                    </li>
-                </ul>
-            </div>
-        </section>
         </main>
 
-        <footer class="text-center py-3" style="color: #004220; background: white;">
+        <footer class="text-center py-4" style="color: #004220; background: white;">
             <div class="border-bottom">
-                <ul class="d-flex flex-row justify-content-center">
-                    <li>
+                <ul class="d-flex flex-row justify-content-center fs-3">
+                    <li class="me-2">
                         <a href="https://twitter.com/kiyo_saiore">
                             <i class="fab fa-twitter" style="color: #ffc0cb;"></i>
                         </a>
