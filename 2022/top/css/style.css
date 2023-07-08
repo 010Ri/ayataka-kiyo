@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
 
-
 .hero-scroll {
   width: 19px;
   position: absolute;
@@ -102,6 +101,7 @@
   }
 }
 */
+
 .info {
   width: 100%;
   background: #f7f7f7;
