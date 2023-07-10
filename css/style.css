@@ -1,9 +1,22 @@
+@font-face {
+	font-family: 'Nico Moji+ v2';
+	src: url(../font/nicomoji-plus_v2/nicomoji-plus_v2.ttf);
+}
+
+.nicomoji-plus-v2 { 
+    font-family: "Nico Moji+ v2"; 
+}
+
 .bg-pale-pink {
     background: #ffc0cb;
 }
 
 .text-pale-pink {
     color: #ffc0cb;
+}
+
+.bg-deep-green {
+    background: #004220;
 }
 
 .text-deep-green {
@@ -62,7 +75,6 @@ header.DownMove{
         transform: translateY(0);
     }
 }
-
 
 .swiper-thumbnail .swiper-slide {
     opacity: 0.2;
