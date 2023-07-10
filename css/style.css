@@ -35,6 +35,10 @@
     width: 70px;
 }
 
+.kiyo-neko-60 {
+    width: 60px;
+}
+
 #loading {
     transition: all 1s;
 }
