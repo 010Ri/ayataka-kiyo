@@ -7,6 +7,3 @@
 https://nicofont.pupu.jp/nicomoji-plus.html
 
 を利用しました。
-
-## Pagesで公開しました
-https://010ri.github.io/ayataka-kiyo/
